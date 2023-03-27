@@ -15,7 +15,6 @@ select.forEach(item => {
     item.querySelector('.select__head-text').innerHTML = target.innerHTML;
     parentElement.querySelector('.select__input').value = target.innerHTML;
     parentElement.querySelector(`.${activeClassList}`)?.classList?.remove(activeClassList);
-    console.log(target)
     target.classList.add(activeClassList);
   })
 })
@@ -29,4 +28,3 @@ document.addEventListener('click', (e) => {
     })
   }
 })
-console.log(select)
