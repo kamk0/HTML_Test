@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <a href="/" class="header__logo">
+      <picture class="header__picture">
+        <img class="header__img" src="./image/logo.png" alt="logo">
+      </picture>
+    </a>
+
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger header__burger-btn">
+      <rect class="burger__line burger__line_one" x="3" y="7" width="26" height="2"/>
+      <rect class="burger__line burger__line_two" x="3" y="15" width="26" height="2"/>
+      <rect class="burger__line burger__line_three" x="3" y="23" width="26" height="2"/>
+    </svg>
+
+    <nav class="header__nav">
+      <ul class="header__nav-wrapper">
+        <li class="header__nav-item">
+          <a class="tpg_b4 header__nav-link" href="#">Бизнес</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="tpg_b4 header__nav-link" href="#">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="tpg_b4 header__nav-link" href="#">Цены</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="tpg_b4 header__nav-link" href="#">Оформить заказ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <picture class="g__picture">
+      <img class="g__img" src="./image/hero.jpg" alt="hero">
+    </picture>
+    <div class="container hero__container">
+      <h1 class="hero__title"><span class="color_base">Lorem ipsum</span> dolor sit amet consectetur <span
+          class="color_base">adipiscing</span></h1>
+      <div class="hero__description">
+        <p class="tpg_b1 hero__description-text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="hero__description-list">
+          <li class="tpg_b1 hero__description-item">
+            Totam rem aperiam eaque ipsa
+          </li>
+          <li class="tpg_b1 hero__description-item">
+            Sit voluptatem accusantium doloremque laudantium
+          </li>
+          <li class="tpg_b1 hero__description-item">
+            Sed ut perspiciatis, unde omnis iste natus error
+          </li>
+        </ul>
+      </div>
+      <div class="hero__buttons">
+        <a href="#" class="btn tpg_b5 hero__btn">заказать</a>
+        <a href="#" class="btn btn_color-white tpg_b5 hero__btn">подробнее</a>
+      </div>
+    </div>
+  </section>
+  <section class="order">
+    <picture class="g__picture">
+      <img class="g__img" src="./image/order.png" alt="order">
+    </picture>
+    <div class="container order__container">
+      <div class="order__header">
+        <h2 class="order__title">Оформление <span class="color_base">Заказа</span></h2>
+        <p class="tpg_b2 order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      </div>
+      <div class="order__steps">
+        <div class="order__step">
+          <picture class="order__step-picture">
+            <img class="order__step-img" src="./image/fl.png" alt="fl">
+          </picture>
+          <div class="order__step-text">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="order__step">
+          <picture class="order__step-picture">
+            <img class="order__step-img" src="./image/percent.png" alt="fl">
+          </picture>
+          <div class="order__step-text">Сonsecteturadipiscing elit</div>
+        </div>
+        <div class="order__step">
+          <picture class="order__step-picture">
+            <img class="order__step-img" src="./image/send.png" alt="fl">
+          </picture>
+          <div class="order__step-text">Sed do eiusmod tempor</div>
+        </div>
+        <div class="order__step">
+          <picture class="order__step-picture">
+            <img class="order__step-img" src="./image/mailWhite.png" alt="fl">
+          </picture>
+          <div class="order__step-text">Esse cillum doloreeu fugiat</div>
+        </div>
+        <div class="order__step">
+          <picture class="order__step-picture">
+            <img class="order__step-img" src="./image/money.png" alt="fl">
+          </picture>
+          <div class="order__step-text">Excepteur sint occaecat cupidatat non proident</div>
+        </div>
+      </div>
+      <form class="order__form">
+        <div class="select">
+          <input class="select__input" type="hidden" name="type">
+          <div class="select__head">
+            <p class="select__head-text">Выберите тип системы</p>
+            <svg class="select__head-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7">
+              <path
+                  d="M8.93373 5.34847C8.93373 5.4199 8.89801 5.50025 8.84444 5.55382L8.39801 6.00025C8.34444 6.05382 8.26408 6.08954 8.19265 6.08954C8.12123 6.08954 8.04087 6.05382 7.9873 6.00025L4.47837 2.49132L0.969439 6.00025C0.915867 6.05382 0.83551 6.08954 0.764082 6.08954C0.683725 6.08954 0.612296 6.05382 0.558725 6.00025L0.112296 5.55382C0.0587246 5.50025 0.0230103 5.4199 0.0230103 5.34847C0.0230103 5.27704 0.0587246 5.19668 0.112296 5.14311L4.27301 0.982396C4.32658 0.928824 4.40694 0.89311 4.47837 0.89311C4.5498 0.89311 4.63015 0.928824 4.68372 0.982396L8.84444 5.14311C8.89801 5.19668 8.93373 5.27704 8.93373 5.34847Z"/>
+            </svg>
+          </div>
+          <div class="select__list">
+            <ul class="select__wrapper">
+              <li class="tpg_b2 select__item">Sed ut perspiciatis</li>
+              <li class="tpg_b2 select__item">Nemo enim ipsam</li>
+              <li class="tpg_b2 select__item">Et harum quidem</li>
+              <li class="tpg_b2 select__item">Temporibus autem</li>
+              <li class="tpg_b2 select__item">Itaque earum rerum</li>
+              <li class="tpg_b2 select__item">Sed ut perspiciatis</li>
+              <li class="tpg_b2 select__item">Nemo enim ipsam</li>
+              <li class="tpg_b2 select__item">Et harum quidem</li>
+              <li class="tpg_b2 select__item">Temporibus autem</li>
+              <li class="tpg_b2 select__item">Itaque earum rerum</li>
+            </ul>
+          </div>
+        </div>
+        <input class="form__text tpg_b2 order__form-text" type="text" placeholder="Ваше имя" name="email">
+        <input class="form__text tpg_b2 order__form-text" type="text" placeholder="Ваше имя" name="name">
+        <div class=" tpg_b2 order__form-range">
+          <div class="order__form-range-header">
+            <p class="order__form-text">Sed ut perspiciatis, unde omnis iste natus</p>
+            <output id="rangevalue">70%</output>
+          </div>
+          <input class="order__form-range-elem" type="range" value="70" min="0" max="100" oninput="rangevalue.value=`${value}%`" name="range"/>
+        </div>
+        <label class="file">
+          <input type="file" class="file__input" name="file"/>
+          <span class="form__text file__btn">
+            <img class="file__img" src="image/file.png" alt="file">
+            <span class="tpg_buttons file__text">Прикрепить файл</span>
+          </span>
+        </label>
+        <div class="order__form-control">
+          <button href="#" class="btn tpg_buttons order__form-btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__container">
+    <p class="tpg_b5 footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+    <div class="footer__spacer"></div>
+    <div class="footer__info">
+      <div class="footer__info-block">
+        <picture class="footer__info-picture">
+          <img class="footer__info-img" src="./image/QiwiWallet.png" alt="QiwiWallet">
+        </picture>
+        <p class="tpg_b5 footer__info-text">Qiwi wallet</p>
+      </div>
+      <div class="footer__info-block">
+        <picture class="footer__info-picture">
+          <img class="footer__info-img" src="./image/YandexMoney.png" alt="YandexMoney">
+        </picture>
+        <p class="tpg_b5 footer__info-text">Yandex Money</p>
+      </div>
+      <div class="footer__info-block">
+        <picture class="footer__info-picture">
+          <img class="footer__info-img" src="./image/WebMoney.png" alt="WebMoney">
+        </picture>
+        <p class="tpg_b5 footer__info-text">Web Money</p>
+      </div>
+    </div>
+    <div class="footer__spacer"></div>
+    <div class="footer__info">
+      <a class="footer__info-block" href="mailto:test@test.com">
+        <picture class="footer__info-picture">
+          <img class="footer__info-img" src="./image/Mail.png" alt="Mail">
+        </picture>
+        <p class="tpg_b5 footer__info-text">info@ipsum228.com</p>
+      </a>
+      <a class="footer__info-block" href="https://vk.com/feed" target="_blank">
+        <picture class="footer__info-picture">
+          <img class="footer__info-img" src="./image/VK.png" alt="VK">
+        </picture>
+        <p class="tpg_b5 footer__info-text">Мы вконтакте</p>
+      </a>
+    </div>
+
+  </div>
+</footer>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
