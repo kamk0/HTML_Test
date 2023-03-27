@@ -1,0 +1,28 @@
+.file {
+  display: flex;
+
+  &__input {
+    display: none;
+  }
+
+  &__img {
+    width: 17px;
+    height: auto;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    border-color: $c-base;
+    cursor: pointer;
+    user-select: none;
+    transition: 300ms;
+
+    &:hover {
+      border-color: $c-base-dark;
+    }
+  }
+}

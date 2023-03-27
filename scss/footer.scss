@@ -1,0 +1,55 @@
+.footer {
+  background: $c-bg-1;
+  color: $c-white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include _1024 {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__spacer {
+    @include _1024M {
+      width: 1px;
+      height: 18px;
+      margin: 0 10px;
+      background: $c-gray-1;
+    }
+    @include _1024 {
+      display: none;
+    }
+
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    @include _1199M {
+      gap: 38px;
+    }
+    @include _1199 {
+      gap: 10px;
+    }
+    @include _576 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info-block {
+    display: flex;
+    align-items: center;
+    color: $c-white;
+    @include _1199M {
+      gap: 10px;
+    }
+    @include _1199 {
+      gap: 5px;
+    }
+  }
+
+}

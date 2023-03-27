@@ -1,0 +1,16 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(62, 156, 220, 0.7);
+  }
+
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(62, 156, 220, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(62, 156, 220, 0);
+  }
+}

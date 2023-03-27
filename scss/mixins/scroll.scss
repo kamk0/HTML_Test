@@ -1,0 +1,22 @@
+@mixin customScroll($bg: $c-bg-1, $bg-thumb: $c-base, $bg-hover: $c-base-dark) {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $bg;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $bg-thumb;
+    outline: none;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $bg-hover;
+  }
+}

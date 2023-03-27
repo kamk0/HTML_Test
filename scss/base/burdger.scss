@@ -1,0 +1,55 @@
+.burger {
+  @include _1024M {
+    display: none;
+  }
+  @include _1024 {
+    fill: $c-white;
+    cursor: pointer;
+  }
+
+  .js-header_active & {
+    .burger__line_one {
+      @include _1024 {
+        transform: translate(-9px) rotate(-45deg);
+      }
+    }
+
+    .burger__line_two {
+      @include _1024 {
+        opacity: 0;
+        transform: rotate(450deg);
+      }
+    }
+
+    .burger__line_three {
+      @include _1024 {
+        transform: translate(-9px, 2px) rotate(45deg);
+      }
+    }
+  }
+
+  &__line {
+    @include _1024 {
+      transform-origin: center;
+      transition: 300ms;
+    }
+  }
+
+  &__line_one {
+    @include _1024 {
+      transform-origin: right top;
+    }
+  }
+
+  &__line_two {
+    @include _1024 {
+      transform-origin: center;
+    }
+  }
+
+  &__line_three {
+    @include _1024 {
+      transform-origin: right bottom;
+    }
+  }
+}

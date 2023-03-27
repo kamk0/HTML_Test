@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include _1024M {
+    max-width: ($g-container + 60px);
+    padding: 40px;
+  }
+
+  @include _768M {
+    padding: 20px 30px;
+  }
+
+  @include _768 {
+    padding: 16px 24px;
+  }
+
+}

@@ -1,0 +1,24 @@
+.js-header_active {
+  .header__nav {
+    @include _1024 {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    & .navigation__link {
+      opacity: 0.25;
+      transform: translateY(-25%);
+    }
+
+    .header__contact-us {
+      transform: translateY(0);
+    }
+
+    .header__sub {
+      @include _1024 {
+        opacity: 1;
+      }
+    }
+  }
+
+}
